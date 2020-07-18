@@ -129,3 +129,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bulma'
+
+LOGIN_REDIRECT_URL = '/auth/account/'

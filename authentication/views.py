@@ -12,3 +12,9 @@ def signup(request):
     else:
         form = UserCreationForm()
     return  render(request,'authentication/signup.html', {'form':form})
+
+
+def account(request):
+    username = request.user
+    data = {'username': username}
+    return render(request, 'authentication/account.html', data)
