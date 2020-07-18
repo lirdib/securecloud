@@ -1,5 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 <h1 class="is-size-1">Home</h1>
+{% if messages %}
+  {% for message in messages %}
+    <h1>message</h1>
+  {% endfor %}
+{% endif %}
 <br />
 <div class="columns">
   <div class="column">
