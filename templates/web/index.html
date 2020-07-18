@@ -1,8 +1,12 @@
-{% extends 'base.html' %}
-
-{% block content %}
-    <h1 class="is-size-1">Home</h1>
-    <br>
+{% extends 'base.html' %} {% block content %}
+<h1 class="is-size-1">Home</h1>
+<br />
+<div class="columns">
+  <div class="column">
     <a href="/auth/signup/" class="button">Signup</a>
+  </div>
+  <div class="column">
+    <a href="/login/" class="button">Login</a>
+  </div>
+</div>
 {% endblock content %}
-    
