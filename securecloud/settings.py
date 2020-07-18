@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,3 +132,5 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bulma'
 
 LOGIN_REDIRECT_URL = '/auth/account/'
+
+ASGI_APPLICATION = 'securecloud.routing.application'
