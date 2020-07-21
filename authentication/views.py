@@ -9,7 +9,7 @@ def signup(request):
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request,f'Account created for {username}!')
-            return redirect('index.html')
+            return redirect('index')
     else:
         form = UserCreationForm()
     return  render(request,'authentication/signup.html', {'form':form})
