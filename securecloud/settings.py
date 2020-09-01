@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     # django extensions
     'crispy_forms',
     'django_crispy_bulma',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     # own apps
     'authentication',
     'web',
+    'app'
 
 ]
 
